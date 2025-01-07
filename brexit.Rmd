@@ -23,7 +23,7 @@ The data from the survey is in `data/brexit.csv`.
 brexit <- read_csv("data/brexit.csv")
 ```
 
-In the course video we made the following visualisation.
+In the course video, we made the following vizualisation.
 
 ```{r}
 brexit <- brexit %>%
@@ -50,12 +50,14 @@ ggplot(brexit, aes(y = opinion, fill = opinion)) +
   theme_minimal()
 ```
 
-In this application exercise we tell different stories with the same data.
+In this application exercise, let's tell a different story with the same data.
 
 ### Exercise 1 - Free scales
 
 Add `scales = "free_x"` as an argument to the `facet_wrap()` function.
+
 How does the visualisation change?
+
 How is the story this visualisation telling different than the story the original plot tells?
 
 ```{r}
